@@ -14,6 +14,9 @@ class FileUploadModelMixin:
     In most cases a serializer & model with an ImageField
     field is returned from `get_object` & `get_serializer`
     where the serializer has one field named 'file'.
+
+    Use source on the field if you need it to be named
+    something else.
     """
 
     def upload(self, request, *args, **kwargs):
